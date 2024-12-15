@@ -1,0 +1,17 @@
+<!-- bugSolution.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Bug Solution</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- This element is added to have a more robust CSS organization in the fix-->
+  <div class="bg-gray-200 p-4">
+    <h1 class="text-3xl font-bold !important">Fixed Title</h1>
+  <p class="text-lg !important">This is a paragraph. The !important tag is applied to solve the specificity issues to ensure the styles are applied properly. Consider refactoring your CSS structure to avoid !important where possible. </p>
+  </div>
+</body>
+</html>
